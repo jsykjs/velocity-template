@@ -21,10 +21,7 @@
     var data = {
       items: ["a", "b", "c", "d"]
     };
-    console.log(asts)
-    console.log(new Velocity.Compile(asts))
     var html = (new Velocity.Compile(asts)).render(data);
-    console.log(html)
     document.getElementById("container").innerHTML = html;
   })();
   </script>

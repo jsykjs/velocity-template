@@ -1,6 +1,6 @@
 {
   "name": "velocity-template",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "velocity template engine, it can run on browser and node side",
   "author": "",
   "main": "velocity.js",
@@ -17,6 +17,9 @@
     "example": "examples"
   },
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-loader": "^8.0.0-beta.0",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1"
   },
