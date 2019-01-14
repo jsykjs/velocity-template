@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>velocity template use for browser</title>
+</head>
+<body>
+  <div id="container" class="container"></div>
+  <script id="tpl" type="text/tmplate">
+    <ul>
+      #foreach($item in $items)
+          <li>$item</li>
+      #end
+    </ul>
+  </script>
+  <script type="text/javascript" src="../../velocity.min.js"></script>
+  <script type="text/javascript">
+  (function(){
+    var tpl = document.getElementById("tpl").innerHTML;
+    var asts = Velocity.parse(tpl);
+    var data = {
+      items: ["a", "b", "c", "d"]
+    };
+    console.log(asts)
+    console.log(new Velocity.Compile(asts))
+    var html = (new Velocity.Compile(asts)).render(data);
+    console.log(html)
+    document.getElementById("container").innerHTML = html;
+  })();
+  </script>
+</body>
+</html>

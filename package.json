@@ -1,0 +1,25 @@
+{
+  "name": "velocity-template",
+  "version": "0.1.0",
+  "description": "velocity template engine, it can run on browser and node side",
+  "author": "jason liu",
+  "main": "velocity.js",
+  "web": "velocity.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsykjs/velocity-template.git"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "devDependencies": {
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
