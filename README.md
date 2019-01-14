@@ -16,7 +16,7 @@ npm install velocity-template --save-dev
 
 ### Get Started
 
-#### Direct <script> include(it provides the Velocity as a global variable.)
+#### Direct script tag include(it provides the Velocity as a global variable.)
 
 <script src="{publicpath}/velocity.min.js"></script>
 
