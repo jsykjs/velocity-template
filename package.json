@@ -1,8 +1,8 @@
 {
   "name": "velocity-template",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "velocity template engine, it can run on browser and node side",
-  "author": "jason liu",
+  "author": "",
   "main": "velocity.js",
   "web": "velocity.min.js",
   "scripts": {
@@ -20,6 +20,5 @@
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1"
   },
-  "author": "",
   "license": "MIT"
 }
